@@ -1,0 +1,86 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Snonyx TV, téléchargement</title>
+<meta name="description" content="Télécharger Snonyx TV pour téléphone, tablette, Chromecast avec Google TV et TV Android.">
+<link rel="icon" href="assets/favicon.png">
+<style>
+:root{--bg:#0B0A0C;--card:#191514;--card2:#231E1B;--text:#FFF4EC;--soft:#DDD0C6;--muted:#9C918A;--coral:#FF7A45;--peach:#FFC46E;--ink:#1F0F07;--line:rgba(255,244,236,.08)}
+*{box-sizing:border-box}
+body{margin:0;min-height:100vh;background:radial-gradient(900px 520px at 100% 0%,rgba(255,122,69,.16),rgba(255,122,69,0) 70%),var(--bg);color:var(--text);font:16px/1.5 system-ui,-apple-system,"Segoe UI",Roboto,sans-serif}
+main{max-width:760px;margin:0 auto;padding:40px 16px 56px}
+.logo{display:block;width:min(420px,86%);margin:8px auto 6px}
+.tag{text-align:center;color:var(--soft);letter-spacing:.32em;font-size:12px;font-weight:600;margin:0 0 28px}
+.cta{display:flex;flex-direction:column;align-items:center;gap:10px;margin-bottom:28px}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;min-height:54px;padding:0 28px;border-radius:18px;background:linear-gradient(45deg,#F25F2C,var(--coral) 45%,var(--peach));color:var(--ink);font-weight:800;font-size:17px;text-decoration:none}
+.btn:hover{filter:brightness(1.06)}
+.btn svg{width:20px;height:20px}
+.sub{color:var(--muted);font-size:13px}
+.sub a{color:var(--peach)}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:14px}
+.card{background:var(--card);border:1px solid var(--line);border-radius:22px;padding:22px}
+.card h2{margin:0 0 4px;font-size:19px}
+.over{display:block;color:var(--muted);font-size:11px;font-weight:700;letter-spacing:.18em;margin-bottom:10px}
+ol{margin:10px 0 0;padding-left:20px;color:var(--soft)}
+li{margin:6px 0}
+b{color:var(--text)}
+code{background:var(--card2);border:1px solid var(--line);border-radius:8px;padding:1px 7px;color:var(--peach)}
+.note{margin-top:14px;background:var(--card);border:1px solid var(--line);border-radius:22px;padding:18px 22px;color:var(--soft)}
+footer{text-align:center;color:var(--muted);font-size:12.5px;margin-top:30px}
+</style>
+</head>
+<body>
+<main>
+<img class="logo" src="assets/logo.png" alt="Snonyx TV">
+<p class="tag">SIMPLE · RAPIDE · DIVERTISSANT</p>
+
+<div class="cta">
+<a class="btn" id="dl" href="#">
+<svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M5 20h14v-2H5v2zM19 9h-4V3H9v6H5l7 7 7-7z"/></svg>
+Télécharger Snonyx TV
+</a>
+<span class="sub" id="ver">Dernière version publiée · <a id="all" href="#">toutes les versions</a></span>
+</div>
+
+<div class="grid">
+<section class="card">
+<span class="over">TÉLÉPHONE ET TABLETTE</span>
+<h2>Installer l'APK</h2>
+<ol>
+<li>Appuie sur <b>Télécharger Snonyx TV</b>.</li>
+<li>Ouvre le fichier <code>SnonyxTV.apk</code>.</li>
+<li>Si Android le demande, autorise ton navigateur à installer des applications, puis <b>Installer</b>.</li>
+</ol>
+</section>
+<section class="card">
+<span class="over">CHROMECAST ET TV ANDROID</span>
+<h2>Avec Downloader</h2>
+<ol>
+<li>Installe <b>Downloader</b> (AFTVnews) depuis le Play Store de la TV.</li>
+<li>Paramètres › Système › À propos : 7 appuis sur <b>Build du système d'exploitation Android TV</b>.</li>
+<li>Paramètres › Applications › Sécurité et restrictions › <b>Sources inconnues</b> › active Downloader.</li>
+<li>Dans Downloader, tape le <b>code donné par l'administrateur</b>, puis <b>Installer</b>.</li>
+</ol>
+</section>
+</div>
+
+<p class="note">Snonyx TV lit ton propre abonnement IPTV (M3U ou Xtream) : aucune chaîne n'est fournie. Un compte
+Snonyx (essai gratuit) est demandé au premier lancement. Ensuite, l'application se met à jour toute seule : un bouton
+apparaît sur l'accueil quand une nouvelle version est prête.</p>
+
+<footer>Snonyx TV · page réservée aux testeurs</footer>
+</main>
+<script>
+// Liens calcules depuis l'adresse de la page (https://<compte>.github.io/<depot>/) : rien a modifier.
+(function () {
+  var owner = location.hostname.split('.')[0];
+  var repo = location.pathname.split('/').filter(Boolean)[0] || '';
+  var base = 'https://github.com/' + owner + '/' + repo + '/releases';
+  document.getElementById('dl').href = base + '/latest/download/SnonyxTV.apk';
+  document.getElementById('all').href = base;
+})();
+</script>
+</body>
+</html>
