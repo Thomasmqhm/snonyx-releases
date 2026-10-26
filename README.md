@@ -31,7 +31,7 @@ au premier lancement.
    - Paramètres › Système › À propos : appuie 7 fois sur **Build du système d'exploitation Android TV**
      (les options pour les développeurs s'activent) ;
    - Paramètres › Applications › Sécurité et restrictions › **Sources inconnues** › active **Downloader**.
-3. Ouvre Downloader et tape le **code Downloader** donné par l'administrateur, ou l'adresse de cette page.
+3. Ouvre Downloader et tape le code **`8526116`**.
 4. L'APK se télécharge : appuie sur **Installer**, puis **Ouvrir**.
 
 ## Mises à jour
